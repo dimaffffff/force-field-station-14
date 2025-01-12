@@ -421,7 +421,7 @@ public sealed partial class ShuttleSystem
         comp.StateTime = StartEndTime.FromCurTime(_gameTiming, comp.TravelTime - DefaultArrivalTime);
 
         Enable(uid, component: body);
-        _physics.SetLinearVelocity(uid, new Vector2(0f, 20f), body: body);
+        _physics.SetLinearVelocity(uid, new Vector2(0f, 100f), body: body);
         _physics.SetAngularVelocity(uid, 0f, body: body);
         _physics.SetLinearDamping(uid, body, 0f);
         _physics.SetAngularDamping(uid, body, 0f);
